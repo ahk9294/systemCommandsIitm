@@ -3,6 +3,9 @@
 In this course 'system commands' we will learn to work with *Linux operating system*.<br><br>We will learn to use the linuxOS from *Command line environment*.<br>
 <hr>
 
+<sup>[ Side Flash ]</sup>
+
+
 ###### But Why would anyone like to work in Command Line environment?
 <sup>[-Prof GP-] </sup>When we are working with **Linux operating system** we will be able to use it to its fullest potential when we are comfortable with *commands* and *command line environment*.<br><br>We can *combine* these commands to form a **script**.<br><br>And then we can use these scripts to be launched at specific times and thereby *automate* some of the task that we wolud like to do in the Linux environment.<br><br>So the command line environment should be seen as not only a way you type out *instructions* to the computer, but also as a path towards **automation**.
 <hr>
@@ -15,6 +18,58 @@ To "type" commands and work with the operating system we need a *command line en
 - **console** (mainly available in KDE environment of the Linux OS).
 
 ## The command prompt 
-When we open the terminal emmulator we will notice a string like<br>```abh9294@abh9294-desktop:~$```<br>This string is called *command prompt*. We will discuss its details in a moment.<br> Following the command prompt we notice a dippering textbar, it represents that the *shell* is asking for the command to enter.
+When we open the terminal emmulator we will notice a string like
 
-<br><br><br>
+```bash
+
+user@machine:~$
+
+```
+
+This string is called *command prompt*. We will discuss its details in a moment.<br> Following the command prompt we notice a dippering textbar, it represents that the *shell* is asking for the command to enter.
+
+<hr>
+
+<sup>[ Side Flash ]</sup>
+
+###### What is 'shell'?
+
+*Shell* is another essential program present in any OS. It sits just behind the *terminal emulator* and provides the Command Line Interface (CLI) for users to interact with the Operating System.<br>
+
+The *Terminal emulater* itself is an intergrated part of the *shell*.<br>
+
+The *Shell* takes the input from the user via GUI like *terminal emulator* and executes commands, launches programs, manages files, and controls system processes.<br>
+
+In simple words we can say that the *Shell* is a command line interface (**CLI**) that interprets user commands and interacts with the **operating system**.
+
+Few examples of the shell available for use in LinuxOS are :<br>
+- sh
+- bash
+- csh
+- zsh
+
+...others
+
+These shells vary in terms of *syntax*, *features* and *capabilities* but their fundamental purpose is to *allow users to interact with the operating system via command-line interface*.
+
+**Different operating system have different shells**
+
+- Unix-like systems(including Linux) have shells listed above.
+- In **Windows** there are severals shells for different purpose like.
+    - *Windows shell* is responsible for graphical user interface.
+    - *Command prompt* and more advanced *Windows powershell* proviodes command-line interface to interact with windows operating system.
+- In macOS(uses Unix based architecture) we typically have *bash*. It also supports shells like *zsh*.
+
+<hr>
+
+Now let us come back and discuss about *command-prompt* the string that that we noticed in the *Terminal emulator* .
+
+```bash
+user@machine:~$ 
+```
+
+Lets discuss it in more detail.
+
+The anatomy of *command prompt* is shown as follows:
+
+![command-prompt-anatomy](command-prompt-anatomy.png)
